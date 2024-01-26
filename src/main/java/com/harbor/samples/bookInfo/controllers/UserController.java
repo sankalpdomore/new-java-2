@@ -46,7 +46,7 @@ public class UserController {
 
     @DeleteMapping("/user/{id}")
     public void deleteBook(@PathVariable("id") Long id) {
-        LOGGER.info("Deleting user with id: {}", id);
+        LOGGER.info("Testing change. Deleting user with id: {}", id);
         userService.deleteUser(id);
     }
 
